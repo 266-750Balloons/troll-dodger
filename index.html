@@ -1,0 +1,56 @@
+<!-- Credit to lockys for this html code from 3030.js  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Troll Dodger: A Game</title>
+    <link rel="stylesheet" href="test_files/30.css" media="screen" charset="utf-8">
+    <script src="test_files/jquery.js" charset="utf-8"></script>
+    <script src="test_files/30.js" charset="utf-8"></script>
+    <style media="screen">
+        body {
+            background-color: #eee;
+        }
+
+        a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .code-area {
+            width: 500px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-page">
+        <div class="error-msg"><img src="test_files/l4N7287.png">
+            <h2 class="title">Aw, Snap!</h2>
+            <div class="content">Something
+                went wrong while displaying this webpage. Closing the Apps and Tabs
+                that you don't need may help by making more memory available.<br><br>if you're seeing this frequently,
+                try this <a class="reload-link"
+                    href="./reloadPage" aria-label="js:reloadPage()">suggestion</a>.<button class="button blue r-btn">
+                    Reload</button></div>
+        </div>
+    </div>
+    <script>
+        var rickButton = document.getElementsByClassName("button blue r-btn")[0];
+
+        rickButton.addEventListener("click", rickroll)
+
+        function rickroll() {
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }
+    </script>
+</body>
+
+</html>
